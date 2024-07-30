@@ -1,0 +1,213 @@
+{% include "translation_app/header.html" %}
+
+<style>
+    body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-image:url(blue-watercolor-background-dotted-texture_1035-6817.avif); /* Medical-related background image */
+    background-size: cover;
+    background-position: center;
+    color:rgb(0, 0, 0); /* Text color */
+    overflow-x: hidden;
+}
+header {
+    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent black background for better readability */
+    padding: 20px 0;
+    text-align: center;
+} 
+nav {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    padding: 0;
+}
+nav a {
+    color: #000000;
+    text-decoration: none;
+    margin: 0 20px;
+    font-size: 18px;
+}
+section {
+    padding: 50px;
+    text-align: center;
+}
+table th,table td{
+    border: 2px solid black;
+    
+}
+.college{
+    border: 2px sold black;
+    border-collapse: collapse;
+    margin-left: auto;
+  margin-right: auto;
+
+  text-align: center;
+}
+.average{
+    border: 1px solid red;
+    border-collapse: collapse;
+    text-align:center;
+    margin-left: auto;
+  margin-right: auto;
+
+}
+table th,table td{
+    border: 2px solid black;
+    font-size:x-large;
+    margin-left: auto;
+  margin-right: auto;
+
+    
+}
+a:link {
+    color: rgb(0, 0, 0);
+    background-color: transparent;
+    text-decoration: none;
+  }
+  
+  a:visited {
+    color:rgb(0, 0, 0);
+    background-color: transparent;
+    text-decoration: none;
+  }
+  
+  a:hover {
+    color: cyan;
+    background-color: transparent;
+    text-decoration: underline;
+  }
+  
+  a:active {
+    color: yellow;
+    background-color: transparent;
+    text-decoration: underline;
+  }
+  
+</style>
+    
+ 
+
+    <section id="colleges">
+        <h2>Top Sports Colleges </h2>
+        <table class="college">
+        <tr>
+            <th>Rank</th>
+            <th>Name</th>
+           
+        </tr>
+        <tr>
+        <td>1</td>
+        <td>National Institute Of Sports, Patiala </td>
+        
+        </tr>
+            
+            <tr>
+                <td>2</td>
+                <td> Lakshmibai National Institute Of Physical Education, Gwalior</td>
+            </tr>
+                <tr>
+                    <td>3</td>
+                    <td>Tata Football Academy, Jamshedpur</td>
+                </tr>
+                    <tr>
+                        <td>4</td>
+                        <td> Sports Authority Of India( SAI) Institutes, India </td>
+                    </tr>
+                    <tr>
+                        <td>5</td>
+                        <td>JRD Tata Sports Complex, Odisha</td>
+                  </tr>
+                        <tr>
+                            <td>6</td>
+                            <td>Alva's College, Karnataka</td>
+                        </tr>
+                            <tr>
+                                <td>7</td>
+                                <td>St. Stephen's College, Delhi </td>
+                             </tr>
+                                <tr>
+                                    <td>8</td>
+                                    <td> Jain University, Bangalore</td>
+                                </tr>
+                                    <tr>
+                                        <td>9</td>
+                                    <td>  Andhra University, Visakhapatnam</td>      
+                                    </tr>
+                                    <tr>
+                                         <td>10</td>
+                                         <td> Jawaharlal Nehru University, (JNU)</td>
+                                   </tr>
+                                  
+</table>
+    
+<!-- 
+    <p> For others top colleges click the  link below.</p>
+    
+    <a href="https://www.nirfindia.org/2023/SportsRanking.html"> click here</a>
+
+    </section>
+
+   <section id="salary">
+        <h2>Sports's Salary in India </h2>
+        <p>You can search for recent salary data and provide an overview here.</p>
+        <table class="average">
+            <tr>
+              <th>Role</th>
+              <th>Entry Level</th>
+              <th>Senior Level</th>
+            </tr>
+            <tr>
+              <th>Front-end Developer</th>
+              <td>4 lakhs-8 lakhs</td>
+              <td>13 lakhs</td>
+            </tr>
+            <tr>
+              <th>Back-end Developer</th>
+              <td>5 lakhs-9 lakhs</td>
+              <td>16 lakhs</td>
+            </tr>
+            <tr>
+              <th>Full-stack Developer</th>
+              <td>6 lakhs-10 lakhs</td>
+              <td>21 lakhs</td>
+              <tr>
+                <th>Android Developer</th>
+                <td>4 lakhs-8 lakhs</td>
+                <td>19lakhs</td>
+               
+              </tr>
+              <tr>
+                <th>iOS Developer</th>
+                <td>5 lakhs-9 lakhs</td>
+                <td>21 lakhs</td>
+                
+              </tr>
+            </tr>
+            <tr>
+              <th>Data Scientist</th>
+              <td>6 lakhs-10 lakhs</td>
+              <td>31 lakhs</td>
+             
+            </tr><tr>
+              <th>DevOps Engineer</th>
+              <td>5 lakhs-9 lakhs</td>
+              <td>26 lakhs</td>
+             
+            </tr>
+          </table>
+    </section>-->
+
+    <section id="skills">
+        <h2>Skills & Qualifications Required</h2>
+        
+        <img src="/static/img/Skill-1500x1149-1.jpg" alt="" style="height: 500px; width: 600px;">
+    </section>
+
+    <section id="career">
+        <h2>Career Paths</h2>
+        
+        <img src="/static/img/path.jpeg" alt="" style="width: 600px; height: 400px;">
+    </section>
+
+    {% include "translation_app/footer.html" %}

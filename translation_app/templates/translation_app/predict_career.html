@@ -1,0 +1,39 @@
+<!-- predict_career.html -->
+{% include "translation_app\header.html" %}
+{% if predicted_career %}
+<div class="alert alert-success" role="alert">
+    Predicted future career based on today's interests: {{ predicted_career }}
+  </div>
+  {% endif %}
+      <form method="post">
+        {% csrf_token %}
+       
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title">Enter Your Working Interests in Detail</h5>
+        </div>
+      
+        
+        
+      
+      
+         
+          <textarea id="text_message" name="text_message" rows="12" cols="100"></textarea><br>
+        
+        <div class="modal-footer">
+         
+          <button type="submit" class="btn btn-primary">Submit</button>
+        </div>
+      </div>
+    </div>
+</form>
+  </div>
+
+  
+
+      
+    </div>
+   
+    {% include "translation_app\footer.html" %}
+

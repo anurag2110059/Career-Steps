@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<style>
+    #google_translate_element img.goog-te-gadget-simple {
+    display:none;
+}
+
+</style>
+<head>
+    <meta charset="utf-8">
+    <title>Career-Steps</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="" name="keywords">
+    <meta content="" name="description">
+
+    <!-- Favicon -->
+    {% load static %}
+    <link href="{%static 'img/logo.jpg'%}" rel="icon">
+
+    <!-- Google Web Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  
+    <!-- Icon Font Stylesheet -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+
+    <!-- Libraries Stylesheet -->
+   
+    <link rel="stylesheet" href="{%static 'lib/animate/animate.min.css'%}" >
+    
+    <link rel="stylesheet" href="{%static 'lib/owlcarousel/assets/owl.carousel.min.css'%}" >
+
+    <!-- Customized Bootstrap Stylesheet -->
+   
+    <link rel="stylesheet" href="{%static 'css/bootstrap.min.css'%}" >
+    <script src="https://checkout.razorpay.com/v1/checkout.js"></script>
+
+    <!-- Template Stylesheet -->
+   
+    <link rel="stylesheet" href="{%static 'css/style.css'%} " >
+</head>
+
+<body>
+    <!-- Spinner Start -->
+    <div id="spinner" class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
+        <div class="spinner-border text-primary" style="width: 3rem; height: 3rem;" role="status">
+            <span class="sr-only">Loading...</span>
+        </div>
+    </div>
+    <!-- Spinner End -->
+
+
+    <!-- Navbar Start -->
+    <nav class="navbar navbar-expand-lg bg-white navbar-light shadow sticky-top p-0">
+        <a href="{% url 'index' %}" class="navbar-brand d-flex align-items-center px-4 px-lg-5">
+            <h2 class="m-0 text-primary"></i>Career-Steps</h2>
+        </a>
+        <button type="button" class="navbar-toggler me-4" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarCollapse">
+            <div class="navbar-nav ms-auto p-4 p-lg-0">
+                <a href="{% url 'index' %}" class="nav-item nav-link active">Home</a>
+                <a href="{% url 'future' %}" class="nav-item nav-link">Future Darshnam</a>
+                <a href="{% url 'courses' %}" class="nav-item nav-link">Connect to Experts</a>
+               
+                <a href="{% url 'predict_career' %}" class="nav-item nav-link">Career Predictor</a>
+                    
+            
+                <button  id="payButton" class="nav-item nav-link">Join Now</button>
+                
+            </div>
+          
+            <div id="google_translate_element"class="nav-item nav-link">Change Language</div>
+    
+            <!-- Google Translate script -->
+            <script type="text/javascript">
+                function googleTranslateElementInit() {
+                    new google.translate.TranslateElement({
+                        pageLanguage: 'en',  // The language of your website
+                        includedLanguages: 'af,sq,am,ar,hy,az,eu,be,bn,bs,bg,ca,ceb,ny,zh-cn,zh-tw,co,hr,cs,da,nl,en,eo,et,tl,fi,fr,fy,gl,ka,de,el,gu,ht,ha,haw,he,hi,hmn,hu,is,ig,id,ga,it,ja,jw,kn,kk,km,ko,kur,ku,ky,lo,la,lv,lt,lb,mk,mg,ms,ml,mt,mi,mr,mn,my,ne,no,ps,fa,pl,pt,pa,ro,ru,sm,gd,sr,st,sn,sd,si,sk,sl,so,es,su,sw,sv,tg,ta,te,th,tr,uk,ur,ug,uz,vi,cy,xh,yi,yo,zu',  // List of languages to include (all languages)
+                        layout: google.translate.TranslateElement.InlineLayout.SIMPLE  // Layout style
+                    }, 'google_translate_element');
+                }
+            </script>
+            <script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+            <button id="activateButton" class="btn btn-primary py-4 px-lg-5 d-none d-lg-block">Voice Assistant<i class="fa fa-arrow-right ms-3"></i></button>
+        </div>
+        <script>
+            document.getElementById('activateButton').addEventListener('click', function() {
+                var xhr = new XMLHttpRequest();
+                xhr.open('GET', '/activate_assistant/', true);
+                xhr.onreadystatechange = function() {
+                    if (xhr.readyState == XMLHttpRequest.DONE && xhr.status == 200) {
+                        var response = xhr.responseText;
+                        alert(response);  // Show response message
+                    }
+                };
+                xhr.send();
+            });
+        </script>
+          <script>
+            var options = {
+                "key": "rzp_test_bh4gaBCDjymm3A",
+                "amount": 50000, // amount in the smallest currency unit
+                "currency": "INR",
+                "name": "Career Steps",
+                "description": "Test Payment",
+                "image": "career-steps-high-resolution-logo-white (1).png",
+                "handler": function (response){
+                    alert("Payment Successful. Payment ID: " + response.razorpay_payment_id);
+                },
+                "prefill": {
+                    "name": "John Doe",
+                    "email": "john@example.com",
+                    "contact": "9999999999"
+                },
+                "theme": {
+                    "color": "#3399cc"
+                }
+            };
+            var rzp = new Razorpay(options);
+    
+            document.getElementById('payButton').onclick = function(){
+                rzp.open();
+            };
+        </script>
+    </nav>
+    
+    <!-- Navbar End -->
+

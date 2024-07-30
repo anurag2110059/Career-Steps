@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Razorpay</title>
+    <script src="https://checkout.razorpay.com/v1/checkout.js"></script>
+</head>
+<body>
+    <button id="payButton">Pay Now</button>
+
+    <script>
+        var options = {
+            "key": "rzp_test_bh4gaBCDjymm3A",
+            "amount": 50000, // amount in the smallest currency unit
+            "currency": "INR",
+            "name": "Career Steps",
+            "description": "Test Payment",
+            "image": "career-steps-high-resolution-logo-white (1).png",
+            "handler": function (response){
+                alert("Payment Successful. Payment ID: " + response.razorpay_payment_id);
+            },
+            "prefill": {
+                "name": "John Doe",
+                "email": "john@example.com",
+                "contact": "9999999999"
+            },
+            "theme": {
+                "color": "#3399cc"
+            }
+        };
+        var rzp = new Razorpay(options);
+
+        document.getElementById('payButton').onclick = function(){
+            rzp.open();
+        };
+    </script>
+</body>
+</html>
