@@ -1,0 +1,22 @@
+{% include "translation_app\header.html" %}
+<h1>Answer the following questions to predict your career interest:</h1>
+<form action="" method="post">
+    {% csrf_token %}
+    <label for="question1">1. What subjects or topics do you find yourself naturally gravitating towards?</label><br>
+    <input type="text" id="question1" name="question1"><br>
+    <label for="question2">2. Do you prefer working independently or as part of a team?</label><br>
+    <input type="text" id="question2" name="question2"><br>
+    <label for="question3">3. Have you participated in any extracurricular activities or hobbies that you particularly enjoy?</label><br>
+    <input type="text" id="question3" name="question3"><br>
+    <label for="question4">4.What types of problems do you enjoy solving the most?</label><br>
+    <input type="text" id="question4" name="question4"><br>
+    <label for="question5">5. Do you prefer working in a traditional office setting, remotely, or a combination of both?</label><br>
+    <input type="text" id="question5" name="question5"><br>
+   
+ 
+    <!-- Add more questions as needed -->
+    
+    <button type="submit">Predict</button>
+</form>
+{% include "translation_app\footer.html" %}
+             
