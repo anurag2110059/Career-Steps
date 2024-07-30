@@ -1,0 +1,186 @@
+{% include "translation_app\header.html" %}
+<style>
+    body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+  /*  background-image:url(/static/img/19373.jpg); /* Medical-related background image */
+    background-size: cover;
+    background-position: center;
+    color:rgb(12, 12, 12); /* Text color */
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    padding: 0;
+}
+nav a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 20px;
+    font-size: 18px;
+}
+section {
+    padding: 50px;
+    text-align: center;
+}
+table th,table td{
+    border: 2px solid black;
+    
+}
+.college{
+    border: 2px sold black;
+    border-collapse: collapse;
+    margin-left: auto;
+  margin-right: auto;
+
+  text-align: center;
+}
+.average{
+    border: 1px solid red;
+    border-collapse: collapse;
+    text-align:center;
+    margin-left: auto;
+  margin-right: auto;
+
+}
+table th,table td{
+    border: 2px solid black;
+    font-size:x-large;
+    margin-left: auto;
+  margin-right: auto;
+}
+
+</style>
+<header>
+   
+
+<section id="colleges">
+    <h2>Top Medical Colleges </h2>
+    <p> You can search for and list reputable medical colleges here.</p>
+    <table class="college">
+    <tr>
+        <th>Rank</th>
+        <th>Name</th>
+        <th>City</th>
+    </tr>
+    <tr>
+    <td>1</td>
+    <td><a href="https://www.aiims.edu/index.php?lang=en"> All India Institute of Medical Sciences, Delhi</a> </td>
+    <td>New Delhi</td>
+    </tr>
+        
+        <tr>
+            <td>2</td>
+            <td><a href="ttps://pgimer.edu.in/PGIMER_PORTAL/PGIMERPORTAL/home.jsp">Post Graduate  of Medical Education and Research</a></td>
+            <td>Chandigarh</td>
+        </tr>
+            <tr>
+                <td>3</td>
+                <td> <a href="https://www.cmch-vellore.edu/"> Christian Medical College </a></td>
+                <td>Vellore</td>
+            </tr>
+                <tr>
+                    <td>4</td>
+                    <td><a href="https://nimhans.ac.in/"> National Institute of Mental Health & Neuro Sciences </a> </td>
+                    <td>Bangalore</td>
+                </tr>
+                <tr>
+                    <td>5</td>
+                    <td><a href="https://jipmer.edu.in/"> Jawaharlal Institute of Post Graduate Medical Education & Research</a> </td>
+                    <td>Puducherry</td>
+              </tr>
+                    <tr>
+                        <td>6</td>
+                        <td><a href="https://www.amrita.edu/"> Amrita Vishwa Vidyapeetham </a> </td>
+                        <td>Coimbatore</td>
+                    </tr>
+                        <tr>
+                            <td>7</td>
+                            <td> <a href="https://sgpgims.org.in/">Sanjay Gandhi Postgraduate Institute of Medical Sciences </a> </td>
+                            <td>Lucknow</td>
+                         </tr>
+                            <tr>
+                                <td>8</td>
+                                <td> <a href="https://www.bhu.ac.in/site/UnitHomeTemplate/1_4_1101_Institute-of-Medical-Sciences-Home">	Banaras Hindu University </a> </td>
+                                <td>Varanasi</td>
+                            </tr>
+                                <tr>
+                                    <td>9</td>
+                                    <td><a href="https://www.manipal.edu/kmc-manipal.html"> Kasturba Medical College, Manipal </a> </td>
+                                    <td>Manipal</td>
+                                </tr>
+                                <tr>
+                                     <td>10</td>
+                                     <td><a href="https://www.sctimst.ac.in/"> Sree Chitra Tirunal Institute for Medical Sciences and Technology </a> </td>
+                                     <td>Thiruvananthapuram</td>
+                               </tr>
+                              
+</table>
+
+
+<p> For others top colleges click the  link below.</p>
+
+<a href="https://www.nirfindia.org/2023/MedicalRanking.html"> click here</a>
+
+</section>
+
+<section id="salary">
+    <h2>Doctor's Salary in </h2>
+    <p>You can search for recent salary data and provide an overview here.</p>
+    <table class="average">
+        <tr>
+          <th>Doctor Specialty</th>
+          <th>Average Annual Salary (INR)</th>
+          <th>Salary Range (INR)</th>
+        </tr>
+        <tr>
+          <th>General Physician</th>
+          <td>7.5 lakhs</td>
+          <td>5.5 lakhs-24 lakhs</td>
+        </tr>
+        <tr>
+          <th>Paediatrician</th>
+          <td>7.5 lakhs</td>
+          <td>6.5 lakhs-12 lakhs</td>
+        </tr>
+        <tr>
+          <th>Gynecologist</th>
+          <td>9 lakhs</td>
+          <td>7 lakhs-30 lakhs</td>
+          <tr>
+            <th>Dermatologist</th>
+            <td>9 lakhs</td>
+            <td>7.5 lakhs-10.5 lakhs</td>
+          </tr>
+          <tr>
+            <th>Orthopedic Surgeon</th>
+            <td>12 lakhs</td>
+            <td>8.5 lakhs-30 lakhs</td>
+          </tr>
+        </tr>
+        <tr>
+          <th>Cardiologist</th>
+          <td>12 lakhs</td>
+          <td>10 lakhs-14 lakhs</td>
+        </tr><tr>
+          <th>Neurosurgeon</th>
+          <td>15 lakhs</td>
+          <td>12 lakhs-18 lakhs</td>
+        </tr>
+      </table>
+</section>
+
+<!--<section id="skills">
+    <h2>Skills & Qualifications Required</h2>
+    <p>Placeholder text for skills and qualifications required to become a doctor in . You can include information about educational requirements, skills, and personal attributes needed.</p>
+</section>-->
+
+<section id="career">
+    <h2>Career Paths</h2>
+    
+    <img src="/static/img/flow-chart1.png" alt="">
+</section>
+{% include "translation_app\footer.html" %}

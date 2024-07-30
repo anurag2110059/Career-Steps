@@ -1,0 +1,221 @@
+{% include "translation_app\header.html" %}
+<style>
+    body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-image:url(horizontal-detail-no-people-macro-close-up.jpg); /* Medical-related background image */
+    background-size: cover;
+    background-position: center;
+    color:black; /* Text color */
+}
+header {
+    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent black background for better readability */
+    padding: 20px 0;
+    text-align: center;
+} 
+nav {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    padding: 0;
+}
+nav a {
+    color: #0b0b0b;
+    text-decoration: none;
+    margin: 0 20px;
+    font-size: 18px;
+}
+section {
+    padding: 50px;
+    text-align: center;
+}
+table th,table td{
+    border: 2px solid black;
+    
+}
+.college{
+    border: 2px sold black;
+    border-collapse: collapse;
+    margin-left: auto;
+  margin-right: auto;
+
+  text-align: center;
+}
+.average{
+    border: 1px solid red;
+    border-collapse: collapse;
+    text-align:center;
+    margin-left: auto;
+  margin-right: auto;
+
+}
+table th,table td{
+    border: 2px solid black;
+    font-size:x-large;
+    margin-left: auto;
+  margin-right: auto;
+
+    
+}
+a:link {
+    color: rgb(9, 9, 9);
+    background-color: transparent;
+    text-decoration: none;
+  }
+  
+  a:visited {
+    color:rgb(13, 12, 12);
+    background-color: transparent;
+    text-decoration: none;
+  }
+  
+  a:hover {
+    color: cyan;
+    background-color: transparent;
+    text-decoration: underline;
+  }
+  
+  a:active {
+    color: yellow;
+    background-color: transparent;
+    text-decoration: underline;
+  }
+  
+</style>
+    
+   
+
+    <section id="colleges">
+        <h2>Top Engineering Colleges </h2>
+        <p> You can search for and list reputable Engineering colleges here.</p>
+        <table class="college">
+        <tr>
+            <th>Rank</th>
+            <th>Name</th>
+            <th>City</th>
+        </tr>
+        <tr>
+        <td>1</td>
+        <td><a href="https://www.iitm.ac.in/">Indian Institute of Technology Madras </a> </td>
+        <td>Chennai</td>
+        </tr>
+            
+            <tr>
+                <td>2</td>
+                <td><a href="https://home.iitd.ac.in/">Indian Institute of Technology Delhi</a></td>
+                <td>New Delhi</td>
+            </tr>
+                <tr>
+                    <td>3</td>
+                    <td> <a href="https://www.iitb.ac.in/"> Indian Institute of Technology Bombay</a></td>
+                    <td>Mumbai</td>
+                </tr>
+                    <tr>
+                        <td>4</td>
+                        <td><a href="https://www.iitk.ac.in/">Indian Institute of Technology Kanpur </a> </td>
+                        <td>Kanpur</td>
+                    </tr>
+                    <tr>
+                        <td>5</td>
+                        <td><a href="https://www.iitr.ac.in/"> Indian Institute of Technology Roorkee</a> </td>
+                        <td>Roorkee</td>
+                  </tr>
+                        <tr>
+                            <td>6</td>
+                            <td><a href="https://www.iitkgp.ac.in/">Indian Institute of Technology Kharagpur  </a> </td>
+                            <td>Kharagpur</td>
+                        </tr>
+                            <tr>
+                                <td>7</td>
+                                <td> <a href="https://www.iitg.ac.in/">	Indian Institute of Technology Guwahati </a> </td>
+                                <td>Guwahati</td>
+                             </tr>
+                                <tr>
+                                    <td>8</td>
+                                    <td> <a href="https://www.iith.ac.in/">	Indian Institute of Technology Hyderabad	 </a> </td>
+                                    <td>Hyderabad</td>
+                                </tr>
+                                    <tr>
+                                        <td>9</td>
+                                    <td> <a href="https://www.nitt.edu/">National Institute of Technology Tiruchirappalli </a> </td>
+                                        <td>Tiruchirappalli</td>
+                                    </tr>
+                                    <tr>
+                                         <td>10</td>
+                                         <td><a href="http://www.jaduniv.edu.in/">	Jadavpur University  </a> </td>
+                                         <td>Kolkata</td>
+                                   </tr>
+                                  
+</table>
+    
+
+    <p> For others top colleges click the  link below.</p>
+    
+    <a href="https://www.nirfindia.org/2023/EngineeringRanking.html"> click here</a>
+
+    </section>
+
+    <section id="salary">
+        <h2>Engineering's Salary in India </h2>
+        <p>You can search for recent salary data and provide an overview here.</p>
+        <table class="average">
+            <tr>
+              <th>Role</th>
+              <th>Entry Level</th>
+              <th>Senior Level</th>
+            </tr>
+            <tr>
+              <th>Front-end Developer</th>
+              <td>4 lakhs-8 lakhs</td>
+              <td>13 lakhs</td>
+            </tr>
+            <tr>
+              <th>Back-end Developer</th>
+              <td>5 lakhs-9 lakhs</td>
+              <td>16 lakhs</td>
+            </tr>
+            <tr>
+              <th>Full-stack Developer</th>
+              <td>6 lakhs-10 lakhs</td>
+              <td>21 lakhs</td>
+              <tr>
+                <th>Android Developer</th>
+                <td>4 lakhs-8 lakhs</td>
+                <td>19lakhs</td>
+               
+              </tr>
+              <tr>
+                <th>iOS Developer</th>
+                <td>5 lakhs-9 lakhs</td>
+                <td>21 lakhs</td>
+                
+              </tr>
+            </tr>
+            <tr>
+              <th>Data Scientist</th>
+              <td>6 lakhs-10 lakhs</td>
+              <td>31 lakhs</td>
+             
+            </tr><tr>
+              <th>DevOps Engineer</th>
+              <td>5 lakhs-9 lakhs</td>
+              <td>26 lakhs</td>
+             
+            </tr>
+          </table>
+    </section>
+
+    <section id="skills">
+        <h2>Skills & Qualifications Required</h2>
+        
+        <img src="/static/img/skills of engineering.png" alt="">
+    </section>
+
+    <section id="career">
+        <h2>Career Paths</h2>
+        <p> You can explore various  career options available for engineers .</p>
+        <img src="\static\img\career-options-after-engineering-3.webp" alt="">
+    </section>
+
+    {% include "translation_app\footer.html" %}
